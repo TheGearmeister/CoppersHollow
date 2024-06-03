@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Gearmeister's Commissions</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="color.css" />
+  </head>
+
+  <body>
+    <div id="wrapper">
+      <header>
+        <h1>Gearmeister's Art Commissions</h1>
+      </header>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="digitalart.html">Digital Art</a></li>
+          <li><a href="stainedglass.html">Stained Glass</a></li>
+          <li><a href="paintings.html">Paintings</a></li>
+          <li><a href="order.html">Order</a></li>
+        </ul>
+      </nav>
+      <main>
+        <h2>Commission an Order</h2>
+        <h3>Please fill out the order form and we'll be in touch soon!</h3>
+        <br />
+        <form
+          method="post"
+          action="https://webdevbasics.net/scripts/demo.php"
+        >
+          <label for="myFName">*First Name:</label>
+          <input type="text" name="myFName" id="myFName" required="required" />
+
+          <label for="myLName">*Last Name:</label>
+          <input type="text" name="myLName" id="myLName" required="required" />
+
+          <label for="myEmail">*Email Address:</label>
+          <input type="email" name="myEmail" id="myEmail" required="required" />
+
+          <label for="myPNumber">Phone Number:</label>
+          <input type="tel" name="myPNumber" id="myPNumber" maxlength="12" />
+
+          <label for="myChoice">*Commission Type:</label>
+          <select size="1" name="myChoice" id="myChoice" required="required">
+            <option>Select Commisison Type</option>
+            <option value="stainedglass">Stained Glass</option>
+            <option value="digitalart">Digital Art</option>
+            <option value="painting">Painting</option>
+          </select>
+
+          <label for="myComments">*Please describe your commission:</label>
+          <textarea
+            name="myComments"
+            id="myComments"
+            cols="30"
+            rows="2"
+            required="required"
+          ></textarea>
+
+          <input type="submit" value="Submit" />
+        </form>
+        <div id="info" style="text-align: left; padding-left: 5em">
+          Required fields are marked with an asterisk *.
+        </div>
+        <footer>
+          Copyright &copy; 2024 Gearmeister's Artwork
+          <br />
+          <a href="mailto:gearmeister.business@gmail.com">
+            Gearmeister.business@gmail.com</a
+          >
+        </footer>
+      </main>
+    </div>
+  </body>
+</html>
